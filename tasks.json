@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "owner": "TOBI",
+    "created": "2026-03-01T06:51:00Z",
+    "reminder_channel": "telegram",
+    "telegram_number": "+17347304862",
+    "auto_create_github_issues": true,
+    "github_issue_behavior": "create_when_assigned_and_repo_available",
+    "reminder_policy": {
+      "daily_summary_time": "08:00",
+      "timezone": "PT",
+      "escalation": {
+        "due_within_24h": "notify_3x_per_day",
+        "due_within_6h": "notify_hourly",
+        "overdue": "notify_every_30_minutes"
+      }
+    }
+  },
+  "tasks": [
+    {
+      "id": "T2026-0001",
+      "title": "Set up TOBI GitHub access",
+      "project": "Onboarding",
+      "due": "2026-03-02T12:00:00-07:00",
+      "priority": "P1",
+      "status": "done",
+      "assignee": "TOBI",
+      "auto_create_issue": true,
+      "repo": "B3A5TM0DE/TOBI_REPO",
+      "notes": "Accepted collaborator invite using a short-lived PAT (redacted). Repo cloned locally. Next: populate repo + configure issue automation.",
+      "reminders": ["2026-03-01T09:00:00-07:00","2026-03-01T16:00:00-07:00"],
+      "created": "2026-03-01T06:54:00Z",
+      "completed": "2026-03-01T07:18:00Z"
+    },
+    {
+      "id": "T2026-0002",
+      "title": "Build tracker interface with progress bars",
+      "project": "Task Tracker UI",
+      "due": "2026-03-06T12:00:00-07:00",
+      "priority": "P2",
+      "status": "todo",
+      "assignee": "TOBI",
+      "auto_create_issue": true,
+      "repo": "B3A5TM0DE/TOBI_REPO",
+      "notes": "Design a dashboard view for Owen with progress bars and status summaries. Include CLI and web-friendly output.",
+      "reminders": ["2026-03-03T09:00:00-07:00","2026-03-05T09:00:00-07:00"],
+      "created": "2026-03-01T07:23:00Z"
+    },
+    {
+      "id": "T2026-0003",
+      "title": "Send a thoughtful message to Laura",
+      "project": "Personal",
+      "due": "2026-03-07T18:00:00-07:00",
+      "priority": "P2",
+      "status": "todo",
+      "assignee": "Owen",
+      "auto_create_issue": false,
+      "repo": "",
+      "notes": "Draft a heartfelt note or plan a surprise message for Laura (4-year anniversary soon). Provide prompt ideas.",
+      "reminders": ["2026-03-04T10:00:00-07:00","2026-03-06T15:00:00-07:00"],
+      "created": "2026-03-01T07:23:00Z"
+    }
+  ],
+  "projects": [
+    {
+      "id": "P2026-0001",
+      "title": "TOBI Onboarding",
+      "milestones": [
+        {"name": "Establish GitHub access", "status": "done", "completed": "2026-03-01T07:18:00Z"},
+        {"name": "Confirm Telegram pairing", "status": "done"},
+        {"name": "Create tasks tracker", "status": "done"}
+      ]
+    },
+    {
+      "id": "P2026-0002",
+      "title": "Task Tracker UI",
+      "milestones": [
+        {"name": "Design layout", "status": "todo"},
+        {"name": "Implement progress bars", "status": "todo"},
+        {"name": "Integrate with tasks.json", "status": "todo"}
+      ]
+    },
+    {
+      "id": "P2026-0003",
+      "title": "Personal gestures",
+      "milestones": [
+        {"name": "Plan message for Laura", "status": "todo"}
+      ]
+    }
+  ],
+  "reminders": [
+    {
+      "id": "E2026-0001",
+      "title": "Appointment",
+      "description": "Appointment at 2:00 PM PT",
+      "start": "2026-03-02T14:00:00-08:00",
+      "end": "2026-03-02T15:00:00-08:00",
+      "reminders": ["2026-03-02T09:00:00-08:00","2026-03-02T13:00:00-08:00"],
+      "location": "",
+      "notes": "Ask Owen for details if prep needed."
+    }
+  ]
+}
